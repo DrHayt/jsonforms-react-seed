@@ -796,15 +796,6 @@
     "properties": {
         "InspectionReport": {
             "$ref": "#/definitions/InspectionReport"
-        },
-        "sgt.integration.propertydata.v1.Alley": {
-            "$ref": "#/definitions/sgt.integration.propertydata.v1.Alley"
-        },
-        "Property": {
-            "$ref": "#/definitions/InspectionReport"
-        },
-       "Ancillary": {
-           "$ref": "#/definitions/InspectionReport"
-       }
+        }
     }
 }
