@@ -3,7 +3,7 @@
     "elements": [
         {
             "type": "Control",
-            "label": "Case File ID",
+            "label": "foo",
             "scope": "#/definitions/InspectionReport/properties/case_file_id"
         }
     ]

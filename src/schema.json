@@ -1,5 +1,36 @@
 {
   "type": "object",
+  "definitions": {
+    "InspectionReport": {
+      "properties": {
+        "case_file_id": {
+          "type": "string",
+          "description": "Property  property                     = 1 [json_name = \"property\"];    Ancillary ancillary                    = 2 [json_name = \"ancillary\"];"
+        },
+        "pda_submitter_entity": {
+          "type": "string"
+        },
+        "property_data_collector_name": {
+          "type": "string"
+        },
+        "property_data_collector_type": {
+          "type": "string"
+        },
+        "state_credential_id": {
+          "type": "string"
+        },
+        "license_state": {
+          "type": "string"
+        },
+        "license_expiration": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": true,
+      "type": "object",
+      "title": "Inspection Report"
+    }
+  },
   "properties": {
     "name": {
       "type": "string",
@@ -12,13 +43,16 @@
     "done": {
       "type": "boolean"
     },
+    "happy": {
+      "type": "boolean"
+    },
     "due_date": {
       "type": "string",
       "format": "date"
     },
     "rating": {
       "type": "integer",
-      "maximum": 5
+      "maximum": 8
     },
     "recurrence": {
       "type": "string",
@@ -28,5 +62,5 @@
       "type": "integer"
     }
   },
-  "required": ["name", "due_date"]
+  "required": ["name", "due_date", "description"]
 }

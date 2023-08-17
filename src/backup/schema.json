@@ -1,0 +1,33 @@
+{
+    "definitions": {
+        "InspectionReport": {
+            "properties": {
+                "case_file_id": {
+                    "type": "string",
+                    "description": "Property  property                     = 1 [json_name = \"property\"];    Ancillary ancillary                    = 2 [json_name = \"ancillary\"];"
+                },
+                "pda_submitter_entity": {
+                    "type": "string"
+                },
+                "property_data_collector_name": {
+                    "type": "string"
+                },
+                "property_data_collector_type": {
+                    "type": "string"
+                },
+                "state_credential_id": {
+                    "type": "string"
+                },
+                "license_state": {
+                    "type": "string"
+                },
+                "license_expiration": {
+                    "type": "string"
+                }
+            },
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Inspection Report"
+        }
+    }
+}
