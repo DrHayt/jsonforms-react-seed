@@ -1,0 +1,156 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$ref": "#/definitions/FinishedSpaces",
+    "definitions": {
+        "FinishedSpaces": {
+            "properties": {
+                "levels": {
+                    "items": {
+                        "$ref": "#/definitions/sgt.integration.propertydata.v1.Levels"
+                    },
+                    "type": "array"
+                }
+            },
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Finished Spaces"
+        },
+        "sgt.integration.propertydata.v1.InteriorDeficiencies": {
+            "properties": {
+                "deficiency_name": {
+                    "type": "string"
+                },
+                "deficiency_type": {
+                    "type": "string"
+                },
+                "interior_deficiency_severity": {
+                    "type": "string"
+                },
+                "description_interior_deficiency": {
+                    "type": "string"
+                }
+            },
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Interior Deficiencies"
+        },
+        "sgt.integration.propertydata.v1.InteriorUpdates": {
+            "properties": {
+                "interior_updated_component": {
+                    "type": "string"
+                },
+                "interior_update_type": {
+                    "type": "string"
+                },
+                "interior_update_timeframe": {
+                    "type": "string"
+                },
+                "interior_update_description": {
+                    "type": "string"
+                }
+            },
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Interior Updates"
+        },
+        "sgt.integration.propertydata.v1.Levels": {
+            "properties": {
+                "total_area": {
+                    "type": "integer"
+                },
+                "finished_living_area": {
+                    "type": "integer"
+                },
+                "level_number": {
+                    "type": "integer"
+                },
+                "level_low_ceiling": {
+                    "type": "boolean"
+                },
+                "earth_contact": {
+                    "type": "boolean"
+                },
+                "attic": {
+                    "type": "boolean"
+                },
+                "finished_non_gla_living_area": {
+                    "type": "integer"
+                },
+                "attic_access": {
+                    "type": "string"
+                },
+                "below_grade_exits": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "rooms": {
+                    "items": {
+                        "$ref": "#/definitions/sgt.integration.propertydata.v1.Rooms"
+                    },
+                    "type": "array"
+                },
+                "attic_access_height": {
+                    "type": "boolean"
+                }
+            },
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Levels"
+        },
+        "sgt.integration.propertydata.v1.RoomFeatures": {
+            "properties": {
+                "room_feature_type": {
+                    "type": "string"
+                }
+            },
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Room Features"
+        },
+        "sgt.integration.propertydata.v1.Rooms": {
+            "properties": {
+                "room_type": {
+                    "type": "string"
+                },
+                "other_room_type_description": {
+                    "type": "string"
+                },
+                "interior_deficiencies": {
+                    "items": {
+                        "$ref": "#/definitions/sgt.integration.propertydata.v1.InteriorDeficiencies"
+                    },
+                    "type": "array"
+                },
+                "interior_updates": {
+                    "items": {
+                        "$ref": "#/definitions/sgt.integration.propertydata.v1.InteriorUpdates"
+                    },
+                    "type": "array"
+                },
+                "plumbing_fixtures": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "room_features": {
+                    "items": {
+                        "$ref": "#/definitions/sgt.integration.propertydata.v1.RoomFeatures"
+                    },
+                    "type": "array"
+                },
+                "car_storage": {
+                    "type": "string"
+                },
+                "range_oven_exists": {
+                    "type": "boolean"
+                }
+            },
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Rooms"
+        }
+    }
+}

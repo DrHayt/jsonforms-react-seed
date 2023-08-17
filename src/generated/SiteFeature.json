@@ -1,0 +1,139 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$ref": "#/definitions/SiteFeature",
+    "definitions": {
+        "SiteFeature": {
+            "properties": {
+                "locations": {
+                    "items": {
+                        "$ref": "#/definitions/sgt.integration.propertydata.v1.Locations"
+                    },
+                    "type": "array"
+                },
+                "views": {
+                    "items": {
+                        "$ref": "#/definitions/sgt.integration.propertydata.v1.Views"
+                    },
+                    "type": "array"
+                },
+                "adverse_site_conditions": {
+                    "items": {
+                        "$ref": "#/definitions/sgt.integration.propertydata.v1.AdverseSiteConditions"
+                    },
+                    "type": "array"
+                },
+                "property_improvements": {
+                    "items": {
+                        "$ref": "#/definitions/sgt.integration.propertydata.v1.PropertyImprovements"
+                    },
+                    "type": "array"
+                },
+                "non_residential_uses": {
+                    "items": {
+                        "$ref": "#/definitions/sgt.integration.propertydata.v1.NonResidentialUses"
+                    },
+                    "type": "array"
+                },
+                "waterfront_site_improvements": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                }
+            },
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Site Feature"
+        },
+        "sgt.integration.propertydata.v1.AdverseSiteConditions": {
+            "properties": {
+                "adverse_type": {
+                    "type": "string"
+                },
+                "description_adverse_site_condition": {
+                    "type": "string"
+                }
+            },
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Adverse Site Conditions"
+        },
+        "sgt.integration.propertydata.v1.Location": {
+            "properties": {
+                "location_description_type": {
+                    "type": "string"
+                }
+            },
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Location"
+        },
+        "sgt.integration.propertydata.v1.Locations": {
+            "properties": {
+                "location": {
+                    "$ref": "#/definitions/sgt.integration.propertydata.v1.Location",
+                    "additionalProperties": true
+                },
+                "location_description_details": {
+                    "type": "string"
+                }
+            },
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Locations"
+        },
+        "sgt.integration.propertydata.v1.NonResidentialUses": {
+            "properties": {
+                "non_residential_use_type": {
+                    "type": "string"
+                },
+                "description_non_residential_use": {
+                    "type": "string"
+                }
+            },
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Non Residential Uses"
+        },
+        "sgt.integration.propertydata.v1.PropertyImprovements": {
+            "properties": {
+                "property_improvement_type": {
+                    "type": "string"
+                },
+                "description_property_improvement": {
+                    "type": "string"
+                }
+            },
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Property Improvements"
+        },
+        "sgt.integration.propertydata.v1.View": {
+            "properties": {
+                "view_description_type": {
+                    "type": "string"
+                },
+                "view_quality": {
+                    "type": "string"
+                }
+            },
+            "additionalProperties": true,
+            "type": "object",
+            "title": "View"
+        },
+        "sgt.integration.propertydata.v1.Views": {
+            "properties": {
+                "view": {
+                    "$ref": "#/definitions/sgt.integration.propertydata.v1.View",
+                    "additionalProperties": true
+                },
+                "view_description_details": {
+                    "type": "string"
+                }
+            },
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Views"
+        }
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$ref": "#/definitions/InteriorDeficiencies",
+    "definitions": {
+        "InteriorDeficiencies": {
+            "properties": {
+                "deficiency_name": {
+                    "type": "string"
+                },
+                "deficiency_type": {
+                    "type": "string"
+                },
+                "interior_deficiency_severity": {
+                    "type": "string"
+                },
+                "description_interior_deficiency": {
+                    "type": "string"
+                }
+            },
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Interior Deficiencies"
+        }
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$ref": "#/definitions/Foundation",
+    "definitions": {
+        "Foundation": {
+            "properties": {
+                "concrete_slab": {
+                    "type": "boolean"
+                },
+                "crawl_space": {
+                    "type": "boolean"
+                },
+                "sump_pump": {
+                    "type": "boolean"
+                }
+            },
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Foundation"
+        }
+    }
+}

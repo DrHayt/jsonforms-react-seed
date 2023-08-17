@@ -1,0 +1,25 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$ref": "#/definitions/PropertyAnalysis",
+    "definitions": {
+        "PropertyAnalysis": {
+            "properties": {
+                "property_condition_rating": {
+                    "type": "integer"
+                },
+                "property_quality_rating": {
+                    "type": "integer"
+                },
+                "repair_estimate": {
+                    "type": "integer"
+                },
+                "ansi_compliance": {
+                    "type": "boolean"
+                }
+            },
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Property Analysis"
+        }
+    }
+}

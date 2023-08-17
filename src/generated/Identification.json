@@ -1,0 +1,30 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$ref": "#/definitions/Identification",
+    "definitions": {
+        "Identification": {
+            "properties": {
+                "gps_coordinates": {
+                    "$ref": "#/definitions/sgt.integration.propertydata.v1.GpsCoordinates",
+                    "additionalProperties": true
+                }
+            },
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Identification"
+        },
+        "sgt.integration.propertydata.v1.GpsCoordinates": {
+            "properties": {
+                "latitude": {
+                    "type": "integer"
+                },
+                "longitude": {
+                    "type": "integer"
+                }
+            },
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Gps Coordinates"
+        }
+    }
+}

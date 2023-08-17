@@ -1,0 +1,120 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$ref": "#/definitions/Ancillary",
+    "definitions": {
+        "Ancillary": {
+            "properties": {
+                "attic_floor_exists": {
+                    "type": "boolean"
+                },
+                "attic_heated": {
+                    "type": "boolean"
+                },
+                "alley": {
+                    "$ref": "#/definitions/sgt.integration.propertydata.v1.Alley",
+                    "additionalProperties": true
+                },
+                "appliances": {
+                    "$ref": "#/definitions/sgt.integration.propertydata.v1.Appliances",
+                    "additionalProperties": true
+                },
+                "exterior": {
+                    "$ref": "#/definitions/sgt.integration.propertydata.v1.Exterior",
+                    "additionalProperties": true
+                },
+                "foundation": {
+                    "$ref": "#/definitions/sgt.integration.propertydata.v1.Foundation",
+                    "additionalProperties": true
+                },
+                "gas": {
+                    "$ref": "#/definitions/sgt.integration.propertydata.v1.Gas",
+                    "additionalProperties": true
+                },
+                "interior": {
+                    "$ref": "#/definitions/sgt.integration.propertydata.v1.Interior",
+                    "additionalProperties": true
+                }
+            },
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Ancillary"
+        },
+        "sgt.integration.propertydata.v1.Alley": {
+            "properties": {
+                "public": {
+                    "type": "boolean"
+                },
+                "private": {
+                    "type": "boolean"
+                }
+            },
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Alley"
+        },
+        "sgt.integration.propertydata.v1.Appliances": {
+            "properties": {
+                "refrigerator_exists": {
+                    "type": "boolean"
+                },
+                "dishwasher_exists": {
+                    "type": "boolean"
+                },
+                "disposal_exists": {
+                    "type": "boolean"
+                },
+                "microwave_exists": {
+                    "type": "boolean"
+                },
+                "washer_dryer_exists": {
+                    "type": "boolean"
+                },
+                "other_exists": {
+                    "type": "boolean"
+                }
+            },
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Appliances"
+        },
+        "sgt.integration.propertydata.v1.Exterior": {
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Exterior"
+        },
+        "sgt.integration.propertydata.v1.Foundation": {
+            "properties": {
+                "concrete_slab": {
+                    "type": "boolean"
+                },
+                "crawl_space": {
+                    "type": "boolean"
+                },
+                "sump_pump": {
+                    "type": "boolean"
+                }
+            },
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Foundation"
+        },
+        "sgt.integration.propertydata.v1.Gas": {
+            "properties": {
+                "public": {
+                    "type": "boolean"
+                },
+                "other": {
+                    "type": "boolean"
+                }
+            },
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Gas"
+        },
+        "sgt.integration.propertydata.v1.Interior": {
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Interior"
+        }
+    }
+}

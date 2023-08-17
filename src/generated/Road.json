@@ -1,0 +1,22 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$ref": "#/definitions/Road",
+    "definitions": {
+        "Road": {
+            "properties": {
+                "road_maintained_indicator": {
+                    "type": "boolean"
+                },
+                "year_round_access_indicator": {
+                    "type": "boolean"
+                },
+                "road_type": {
+                    "type": "string"
+                }
+            },
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Road"
+        }
+    }
+}

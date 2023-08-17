@@ -1,0 +1,19 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$ref": "#/definitions/NonResidentialUses",
+    "definitions": {
+        "NonResidentialUses": {
+            "properties": {
+                "non_residential_use_type": {
+                    "type": "string"
+                },
+                "description_non_residential_use": {
+                    "type": "string"
+                }
+            },
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Non Residential Uses"
+        }
+    }
+}

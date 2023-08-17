@@ -1,13 +1,15 @@
 {
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$ref": "#/definitions/InspectionReport",
     "definitions": {
         "InspectionReport": {
             "properties": {
                 "property": {
-                    "$ref": "#/definitions/sgt.integration.propertydata.db.v1.Property",
+                    "$ref": "#/definitions/sgt.integration.propertydata.v1.Property",
                     "additionalProperties": true
                 },
                 "ancillary": {
-                    "$ref": "#/definitions/sgt.integration.propertydata.db.v1.Ancillary",
+                    "$ref": "#/definitions/sgt.integration.propertydata.v1.Ancillary",
                     "additionalProperties": true
                 },
                 "case_file_id": {
@@ -36,7 +38,7 @@
             "type": "object",
             "title": "Inspection Report"
         },
-        "sgt.integration.propertydata.db.v1.Address": {
+        "sgt.integration.propertydata.v1.Address": {
             "properties": {
                 "street_address": {
                     "type": "string"
@@ -58,7 +60,7 @@
             "type": "object",
             "title": "Address"
         },
-        "sgt.integration.propertydata.db.v1.AdverseSiteConditions": {
+        "sgt.integration.propertydata.v1.AdverseSiteConditions": {
             "properties": {
                 "adverse_type": {
                     "type": "string"
@@ -71,7 +73,7 @@
             "type": "object",
             "title": "Adverse Site Conditions"
         },
-        "sgt.integration.propertydata.db.v1.Alley": {
+        "sgt.integration.propertydata.v1.Alley": {
             "properties": {
                 "public": {
                     "type": "boolean"
@@ -84,7 +86,7 @@
             "type": "object",
             "title": "Alley"
         },
-        "sgt.integration.propertydata.db.v1.Ancillary": {
+        "sgt.integration.propertydata.v1.Ancillary": {
             "properties": {
                 "attic_floor_exists": {
                     "type": "boolean"
@@ -93,27 +95,27 @@
                     "type": "boolean"
                 },
                 "alley": {
-                    "$ref": "#/definitions/sgt.integration.propertydata.db.v1.Alley",
+                    "$ref": "#/definitions/sgt.integration.propertydata.v1.Alley",
                     "additionalProperties": true
                 },
                 "appliances": {
-                    "$ref": "#/definitions/sgt.integration.propertydata.db.v1.Appliances",
+                    "$ref": "#/definitions/sgt.integration.propertydata.v1.Appliances",
                     "additionalProperties": true
                 },
                 "exterior": {
-                    "$ref": "#/definitions/sgt.integration.propertydata.db.v1.Exterior",
+                    "$ref": "#/definitions/sgt.integration.propertydata.v1.Exterior",
                     "additionalProperties": true
                 },
                 "foundation": {
-                    "$ref": "#/definitions/sgt.integration.propertydata.db.v1.Foundation",
+                    "$ref": "#/definitions/sgt.integration.propertydata.v1.Foundation",
                     "additionalProperties": true
                 },
                 "gas": {
-                    "$ref": "#/definitions/sgt.integration.propertydata.db.v1.Gas",
+                    "$ref": "#/definitions/sgt.integration.propertydata.v1.Gas",
                     "additionalProperties": true
                 },
                 "interior": {
-                    "$ref": "#/definitions/sgt.integration.propertydata.db.v1.Interior",
+                    "$ref": "#/definitions/sgt.integration.propertydata.v1.Interior",
                     "additionalProperties": true
                 }
             },
@@ -121,7 +123,7 @@
             "type": "object",
             "title": "Ancillary"
         },
-        "sgt.integration.propertydata.db.v1.Appliances": {
+        "sgt.integration.propertydata.v1.Appliances": {
             "properties": {
                 "refrigerator_exists": {
                     "type": "boolean"
@@ -146,7 +148,7 @@
             "type": "object",
             "title": "Appliances"
         },
-        "sgt.integration.propertydata.db.v1.CoolingSystems": {
+        "sgt.integration.propertydata.v1.CoolingSystems": {
             "properties": {
                 "cooling_type": {
                     "type": "string"
@@ -156,7 +158,7 @@
             "type": "object",
             "title": "Cooling Systems"
         },
-        "sgt.integration.propertydata.db.v1.ElectricalServices": {
+        "sgt.integration.propertydata.v1.ElectricalServices": {
             "properties": {
                 "service_type": {
                     "type": "string"
@@ -169,12 +171,12 @@
             "type": "object",
             "title": "Electrical Services"
         },
-        "sgt.integration.propertydata.db.v1.Exterior": {
+        "sgt.integration.propertydata.v1.Exterior": {
             "additionalProperties": true,
             "type": "object",
             "title": "Exterior"
         },
-        "sgt.integration.propertydata.db.v1.ExteriorDeficiencies": {
+        "sgt.integration.propertydata.v1.ExteriorDeficiencies": {
             "properties": {
                 "deficiency_name": {
                     "type": "string"
@@ -193,7 +195,7 @@
             "type": "object",
             "title": "Exterior Deficiencies"
         },
-        "sgt.integration.propertydata.db.v1.ExteriorUpdates": {
+        "sgt.integration.propertydata.v1.ExteriorUpdates": {
             "properties": {
                 "exterior_updated_component": {
                     "type": "string"
@@ -203,11 +205,11 @@
             "type": "object",
             "title": "Exterior Updates"
         },
-        "sgt.integration.propertydata.db.v1.FinishedSpaces": {
+        "sgt.integration.propertydata.v1.FinishedSpaces": {
             "properties": {
                 "levels": {
                     "items": {
-                        "$ref": "#/definitions/sgt.integration.propertydata.db.v1.Levels"
+                        "$ref": "#/definitions/sgt.integration.propertydata.v1.Levels"
                     },
                     "type": "array"
                 }
@@ -216,7 +218,7 @@
             "type": "object",
             "title": "Finished Spaces"
         },
-        "sgt.integration.propertydata.db.v1.Foundation": {
+        "sgt.integration.propertydata.v1.Foundation": {
             "properties": {
                 "concrete_slab": {
                     "type": "boolean"
@@ -232,7 +234,7 @@
             "type": "object",
             "title": "Foundation"
         },
-        "sgt.integration.propertydata.db.v1.Gas": {
+        "sgt.integration.propertydata.v1.Gas": {
             "properties": {
                 "public": {
                     "type": "boolean"
@@ -245,7 +247,7 @@
             "type": "object",
             "title": "Gas"
         },
-        "sgt.integration.propertydata.db.v1.GpsCoordinates": {
+        "sgt.integration.propertydata.v1.GpsCoordinates": {
             "properties": {
                 "latitude": {
                     "type": "integer"
@@ -258,7 +260,7 @@
             "type": "object",
             "title": "Gps Coordinates"
         },
-        "sgt.integration.propertydata.db.v1.HeatingSystems": {
+        "sgt.integration.propertydata.v1.HeatingSystems": {
             "properties": {
                 "heating_type": {
                     "type": "string"
@@ -268,10 +270,10 @@
             "type": "object",
             "title": "Heating Systems"
         },
-        "sgt.integration.propertydata.db.v1.Identification": {
+        "sgt.integration.propertydata.v1.Identification": {
             "properties": {
                 "gps_coordinates": {
-                    "$ref": "#/definitions/sgt.integration.propertydata.db.v1.GpsCoordinates",
+                    "$ref": "#/definitions/sgt.integration.propertydata.v1.GpsCoordinates",
                     "additionalProperties": true
                 }
             },
@@ -279,12 +281,12 @@
             "type": "object",
             "title": "Identification"
         },
-        "sgt.integration.propertydata.db.v1.Interior": {
+        "sgt.integration.propertydata.v1.Interior": {
             "additionalProperties": true,
             "type": "object",
             "title": "Interior"
         },
-        "sgt.integration.propertydata.db.v1.InteriorDeficiencies": {
+        "sgt.integration.propertydata.v1.InteriorDeficiencies": {
             "properties": {
                 "deficiency_name": {
                     "type": "string"
@@ -303,7 +305,7 @@
             "type": "object",
             "title": "Interior Deficiencies"
         },
-        "sgt.integration.propertydata.db.v1.InteriorUpdates": {
+        "sgt.integration.propertydata.v1.InteriorUpdates": {
             "properties": {
                 "interior_updated_component": {
                     "type": "string"
@@ -322,7 +324,7 @@
             "type": "object",
             "title": "Interior Updates"
         },
-        "sgt.integration.propertydata.db.v1.Levels": {
+        "sgt.integration.propertydata.v1.Levels": {
             "properties": {
                 "total_area": {
                     "type": "integer"
@@ -356,7 +358,7 @@
                 },
                 "rooms": {
                     "items": {
-                        "$ref": "#/definitions/sgt.integration.propertydata.db.v1.Rooms"
+                        "$ref": "#/definitions/sgt.integration.propertydata.v1.Rooms"
                     },
                     "type": "array"
                 },
@@ -368,7 +370,7 @@
             "type": "object",
             "title": "Levels"
         },
-        "sgt.integration.propertydata.db.v1.Location": {
+        "sgt.integration.propertydata.v1.Location": {
             "properties": {
                 "location_description_type": {
                     "type": "string"
@@ -378,10 +380,10 @@
             "type": "object",
             "title": "Location"
         },
-        "sgt.integration.propertydata.db.v1.Locations": {
+        "sgt.integration.propertydata.v1.Locations": {
             "properties": {
                 "location": {
-                    "$ref": "#/definitions/sgt.integration.propertydata.db.v1.Location",
+                    "$ref": "#/definitions/sgt.integration.propertydata.v1.Location",
                     "additionalProperties": true
                 },
                 "location_description_details": {
@@ -392,7 +394,7 @@
             "type": "object",
             "title": "Locations"
         },
-        "sgt.integration.propertydata.db.v1.Lot": {
+        "sgt.integration.propertydata.v1.Lot": {
             "properties": {
                 "lot_size_estimate": {
                     "type": "boolean"
@@ -408,7 +410,7 @@
             "type": "object",
             "title": "Lot"
         },
-        "sgt.integration.propertydata.db.v1.MechanicalDeficiencies": {
+        "sgt.integration.propertydata.v1.MechanicalDeficiencies": {
             "properties": {
                 "deficiency_name": {
                     "type": "string"
@@ -421,7 +423,7 @@
             "type": "object",
             "title": "Mechanical Deficiencies"
         },
-        "sgt.integration.propertydata.db.v1.NonResidentialUses": {
+        "sgt.integration.propertydata.v1.NonResidentialUses": {
             "properties": {
                 "non_residential_use_type": {
                     "type": "string"
@@ -434,10 +436,10 @@
             "type": "object",
             "title": "Non Residential Uses"
         },
-        "sgt.integration.propertydata.db.v1.OffSiteFeature": {
+        "sgt.integration.propertydata.v1.OffSiteFeature": {
             "properties": {
                 "road": {
-                    "$ref": "#/definitions/sgt.integration.propertydata.db.v1.Road",
+                    "$ref": "#/definitions/sgt.integration.propertydata.v1.Road",
                     "additionalProperties": true
                 }
             },
@@ -445,30 +447,30 @@
             "type": "object",
             "title": "Off Site Feature"
         },
-        "sgt.integration.propertydata.db.v1.Property": {
+        "sgt.integration.propertydata.v1.Property": {
             "properties": {
                 "property_occupied": {
                     "type": "boolean"
                 },
                 "address": {
-                    "$ref": "#/definitions/sgt.integration.propertydata.db.v1.Address",
+                    "$ref": "#/definitions/sgt.integration.propertydata.v1.Address",
                     "additionalProperties": true
                 },
                 "identification": {
-                    "$ref": "#/definitions/sgt.integration.propertydata.db.v1.Identification",
+                    "$ref": "#/definitions/sgt.integration.propertydata.v1.Identification",
                     "additionalProperties": true
                 },
                 "property_analysis": {
-                    "$ref": "#/definitions/sgt.integration.propertydata.db.v1.PropertyAnalysis",
+                    "$ref": "#/definitions/sgt.integration.propertydata.v1.PropertyAnalysis",
                     "additionalProperties": true
                 },
                 "site": {
-                    "$ref": "#/definitions/sgt.integration.propertydata.db.v1.Site",
+                    "$ref": "#/definitions/sgt.integration.propertydata.v1.Site",
                     "additionalProperties": true
                 },
                 "structures": {
                     "items": {
-                        "$ref": "#/definitions/sgt.integration.propertydata.db.v1.Structures"
+                        "$ref": "#/definitions/sgt.integration.propertydata.v1.Structures"
                     },
                     "type": "array"
                 },
@@ -480,7 +482,7 @@
             "type": "object",
             "title": "Property"
         },
-        "sgt.integration.propertydata.db.v1.PropertyAnalysis": {
+        "sgt.integration.propertydata.v1.PropertyAnalysis": {
             "properties": {
                 "property_condition_rating": {
                     "type": "integer"
@@ -499,7 +501,7 @@
             "type": "object",
             "title": "Property Analysis"
         },
-        "sgt.integration.propertydata.db.v1.PropertyImprovements": {
+        "sgt.integration.propertydata.v1.PropertyImprovements": {
             "properties": {
                 "property_improvement_type": {
                     "type": "string"
@@ -512,7 +514,7 @@
             "type": "object",
             "title": "Property Improvements"
         },
-        "sgt.integration.propertydata.db.v1.Road": {
+        "sgt.integration.propertydata.v1.Road": {
             "properties": {
                 "road_maintained_indicator": {
                     "type": "boolean"
@@ -528,7 +530,7 @@
             "type": "object",
             "title": "Road"
         },
-        "sgt.integration.propertydata.db.v1.RoomFeatures": {
+        "sgt.integration.propertydata.v1.RoomFeatures": {
             "properties": {
                 "room_feature_type": {
                     "type": "string"
@@ -538,7 +540,7 @@
             "type": "object",
             "title": "Room Features"
         },
-        "sgt.integration.propertydata.db.v1.Rooms": {
+        "sgt.integration.propertydata.v1.Rooms": {
             "properties": {
                 "room_type": {
                     "type": "string"
@@ -548,13 +550,13 @@
                 },
                 "interior_deficiencies": {
                     "items": {
-                        "$ref": "#/definitions/sgt.integration.propertydata.db.v1.InteriorDeficiencies"
+                        "$ref": "#/definitions/sgt.integration.propertydata.v1.InteriorDeficiencies"
                     },
                     "type": "array"
                 },
                 "interior_updates": {
                     "items": {
-                        "$ref": "#/definitions/sgt.integration.propertydata.db.v1.InteriorUpdates"
+                        "$ref": "#/definitions/sgt.integration.propertydata.v1.InteriorUpdates"
                     },
                     "type": "array"
                 },
@@ -566,7 +568,7 @@
                 },
                 "room_features": {
                     "items": {
-                        "$ref": "#/definitions/sgt.integration.propertydata.db.v1.RoomFeatures"
+                        "$ref": "#/definitions/sgt.integration.propertydata.v1.RoomFeatures"
                     },
                     "type": "array"
                 },
@@ -581,7 +583,7 @@
             "type": "object",
             "title": "Rooms"
         },
-        "sgt.integration.propertydata.db.v1.SewerServices": {
+        "sgt.integration.propertydata.v1.SewerServices": {
             "properties": {
                 "service_type": {
                     "type": "string"
@@ -591,22 +593,22 @@
             "type": "object",
             "title": "Sewer Services"
         },
-        "sgt.integration.propertydata.db.v1.Site": {
+        "sgt.integration.propertydata.v1.Site": {
             "properties": {
                 "lot": {
-                    "$ref": "#/definitions/sgt.integration.propertydata.db.v1.Lot",
+                    "$ref": "#/definitions/sgt.integration.propertydata.v1.Lot",
                     "additionalProperties": true
                 },
                 "site_feature": {
-                    "$ref": "#/definitions/sgt.integration.propertydata.db.v1.SiteFeature",
+                    "$ref": "#/definitions/sgt.integration.propertydata.v1.SiteFeature",
                     "additionalProperties": true
                 },
                 "off_site_feature": {
-                    "$ref": "#/definitions/sgt.integration.propertydata.db.v1.OffSiteFeature",
+                    "$ref": "#/definitions/sgt.integration.propertydata.v1.OffSiteFeature",
                     "additionalProperties": true
                 },
                 "site_utility": {
-                    "$ref": "#/definitions/sgt.integration.propertydata.db.v1.SiteUtility",
+                    "$ref": "#/definitions/sgt.integration.propertydata.v1.SiteUtility",
                     "additionalProperties": true
                 }
             },
@@ -614,35 +616,35 @@
             "type": "object",
             "title": "Site"
         },
-        "sgt.integration.propertydata.db.v1.SiteFeature": {
+        "sgt.integration.propertydata.v1.SiteFeature": {
             "properties": {
                 "locations": {
                     "items": {
-                        "$ref": "#/definitions/sgt.integration.propertydata.db.v1.Locations"
+                        "$ref": "#/definitions/sgt.integration.propertydata.v1.Locations"
                     },
                     "type": "array"
                 },
                 "views": {
                     "items": {
-                        "$ref": "#/definitions/sgt.integration.propertydata.db.v1.Views"
+                        "$ref": "#/definitions/sgt.integration.propertydata.v1.Views"
                     },
                     "type": "array"
                 },
                 "adverse_site_conditions": {
                     "items": {
-                        "$ref": "#/definitions/sgt.integration.propertydata.db.v1.AdverseSiteConditions"
+                        "$ref": "#/definitions/sgt.integration.propertydata.v1.AdverseSiteConditions"
                     },
                     "type": "array"
                 },
                 "property_improvements": {
                     "items": {
-                        "$ref": "#/definitions/sgt.integration.propertydata.db.v1.PropertyImprovements"
+                        "$ref": "#/definitions/sgt.integration.propertydata.v1.PropertyImprovements"
                     },
                     "type": "array"
                 },
                 "non_residential_uses": {
                     "items": {
-                        "$ref": "#/definitions/sgt.integration.propertydata.db.v1.NonResidentialUses"
+                        "$ref": "#/definitions/sgt.integration.propertydata.v1.NonResidentialUses"
                     },
                     "type": "array"
                 },
@@ -657,23 +659,23 @@
             "type": "object",
             "title": "Site Feature"
         },
-        "sgt.integration.propertydata.db.v1.SiteUtility": {
+        "sgt.integration.propertydata.v1.SiteUtility": {
             "properties": {
                 "electrical_services": {
                     "items": {
-                        "$ref": "#/definitions/sgt.integration.propertydata.db.v1.ElectricalServices"
+                        "$ref": "#/definitions/sgt.integration.propertydata.v1.ElectricalServices"
                     },
                     "type": "array"
                 },
                 "sewer_services": {
                     "items": {
-                        "$ref": "#/definitions/sgt.integration.propertydata.db.v1.SewerServices"
+                        "$ref": "#/definitions/sgt.integration.propertydata.v1.SewerServices"
                     },
                     "type": "array"
                 },
                 "water_services": {
                     "items": {
-                        "$ref": "#/definitions/sgt.integration.propertydata.db.v1.WaterServices"
+                        "$ref": "#/definitions/sgt.integration.propertydata.v1.WaterServices"
                     },
                     "type": "array"
                 }
@@ -682,7 +684,7 @@
             "type": "object",
             "title": "Site Utility"
         },
-        "sgt.integration.propertydata.db.v1.Structures": {
+        "sgt.integration.propertydata.v1.Structures": {
             "properties": {
                 "attachment_type": {
                     "type": "string"
@@ -716,37 +718,37 @@
                 },
                 "finished_spaces": {
                     "items": {
-                        "$ref": "#/definitions/sgt.integration.propertydata.db.v1.FinishedSpaces"
+                        "$ref": "#/definitions/sgt.integration.propertydata.v1.FinishedSpaces"
                     },
                     "type": "array"
                 },
                 "exterior_deficiencies": {
                     "items": {
-                        "$ref": "#/definitions/sgt.integration.propertydata.db.v1.ExteriorDeficiencies"
+                        "$ref": "#/definitions/sgt.integration.propertydata.v1.ExteriorDeficiencies"
                     },
                     "type": "array"
                 },
                 "exterior_updates": {
                     "items": {
-                        "$ref": "#/definitions/sgt.integration.propertydata.db.v1.ExteriorUpdates"
+                        "$ref": "#/definitions/sgt.integration.propertydata.v1.ExteriorUpdates"
                     },
                     "type": "array"
                 },
                 "mechanical_deficiencies": {
                     "items": {
-                        "$ref": "#/definitions/sgt.integration.propertydata.db.v1.MechanicalDeficiencies"
+                        "$ref": "#/definitions/sgt.integration.propertydata.v1.MechanicalDeficiencies"
                     },
                     "type": "array"
                 },
                 "heating_systems": {
                     "items": {
-                        "$ref": "#/definitions/sgt.integration.propertydata.db.v1.HeatingSystems"
+                        "$ref": "#/definitions/sgt.integration.propertydata.v1.HeatingSystems"
                     },
                     "type": "array"
                 },
                 "cooling_systems": {
                     "items": {
-                        "$ref": "#/definitions/sgt.integration.propertydata.db.v1.CoolingSystems"
+                        "$ref": "#/definitions/sgt.integration.propertydata.v1.CoolingSystems"
                     },
                     "type": "array"
                 }
@@ -755,7 +757,7 @@
             "type": "object",
             "title": "Structures"
         },
-        "sgt.integration.propertydata.db.v1.View": {
+        "sgt.integration.propertydata.v1.View": {
             "properties": {
                 "view_description_type": {
                     "type": "string"
@@ -768,10 +770,10 @@
             "type": "object",
             "title": "View"
         },
-        "sgt.integration.propertydata.db.v1.Views": {
+        "sgt.integration.propertydata.v1.Views": {
             "properties": {
                 "view": {
-                    "$ref": "#/definitions/sgt.integration.propertydata.db.v1.View",
+                    "$ref": "#/definitions/sgt.integration.propertydata.v1.View",
                     "additionalProperties": true
                 },
                 "view_description_details": {
@@ -782,7 +784,7 @@
             "type": "object",
             "title": "Views"
         },
-        "sgt.integration.propertydata.db.v1.WaterServices": {
+        "sgt.integration.propertydata.v1.WaterServices": {
             "properties": {
                 "water_type": {
                     "type": "string"
@@ -792,13 +794,5 @@
             "type": "object",
             "title": "Water Services"
         }
-    },
-    "properties": {
-        "InspectionReport": {
-            "$ref": "#/definitions/InspectionReport"
-        },
-       "sgt.integration.propertydata.db.v1.Alley": {
-         "$ref": "#/definitions/sgt.integration.propertydata.db.v1.Alley"
-       }
     }
 }

@@ -1,0 +1,22 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$ref": "#/definitions/Lot",
+    "definitions": {
+        "Lot": {
+            "properties": {
+                "lot_size_estimate": {
+                    "type": "boolean"
+                },
+                "lot_size": {
+                    "type": "string"
+                },
+                "lot_size_units": {
+                    "type": "string"
+                }
+            },
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Lot"
+        }
+    }
+}

@@ -1,0 +1,33 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$ref": "#/definitions/Views",
+    "definitions": {
+        "Views": {
+            "properties": {
+                "view": {
+                    "$ref": "#/definitions/sgt.integration.propertydata.v1.View",
+                    "additionalProperties": true
+                },
+                "view_description_details": {
+                    "type": "string"
+                }
+            },
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Views"
+        },
+        "sgt.integration.propertydata.v1.View": {
+            "properties": {
+                "view_description_type": {
+                    "type": "string"
+                },
+                "view_quality": {
+                    "type": "string"
+                }
+            },
+            "additionalProperties": true,
+            "type": "object",
+            "title": "View"
+        }
+    }
+}

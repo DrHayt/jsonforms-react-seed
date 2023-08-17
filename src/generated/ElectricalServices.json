@@ -1,0 +1,19 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$ref": "#/definitions/ElectricalServices",
+    "definitions": {
+        "ElectricalServices": {
+            "properties": {
+                "service_type": {
+                    "type": "string"
+                },
+                "off_grid_service": {
+                    "type": "string"
+                }
+            },
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Electrical Services"
+        }
+    }
+}

@@ -1,0 +1,31 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$ref": "#/definitions/Appliances",
+    "definitions": {
+        "Appliances": {
+            "properties": {
+                "refrigerator_exists": {
+                    "type": "boolean"
+                },
+                "dishwasher_exists": {
+                    "type": "boolean"
+                },
+                "disposal_exists": {
+                    "type": "boolean"
+                },
+                "microwave_exists": {
+                    "type": "boolean"
+                },
+                "washer_dryer_exists": {
+                    "type": "boolean"
+                },
+                "other_exists": {
+                    "type": "boolean"
+                }
+            },
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Appliances"
+        }
+    }
+}

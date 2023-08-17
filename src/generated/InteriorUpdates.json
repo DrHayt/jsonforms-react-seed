@@ -1,0 +1,25 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$ref": "#/definitions/InteriorUpdates",
+    "definitions": {
+        "InteriorUpdates": {
+            "properties": {
+                "interior_updated_component": {
+                    "type": "string"
+                },
+                "interior_update_type": {
+                    "type": "string"
+                },
+                "interior_update_timeframe": {
+                    "type": "string"
+                },
+                "interior_update_description": {
+                    "type": "string"
+                }
+            },
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Interior Updates"
+        }
+    }
+}

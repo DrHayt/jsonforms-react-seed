@@ -1,0 +1,33 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$ref": "#/definitions/OffSiteFeature",
+    "definitions": {
+        "OffSiteFeature": {
+            "properties": {
+                "road": {
+                    "$ref": "#/definitions/sgt.integration.propertydata.v1.Road",
+                    "additionalProperties": true
+                }
+            },
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Off Site Feature"
+        },
+        "sgt.integration.propertydata.v1.Road": {
+            "properties": {
+                "road_maintained_indicator": {
+                    "type": "boolean"
+                },
+                "year_round_access_indicator": {
+                    "type": "boolean"
+                },
+                "road_type": {
+                    "type": "string"
+                }
+            },
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Road"
+        }
+    }
+}
