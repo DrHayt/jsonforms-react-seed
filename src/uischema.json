@@ -1,25 +1,10 @@
 {
-    "type": "HorizontalLayout",
+    "type": "VerticalLayout",
     "elements": [
         {
             "type": "Control",
-            "label": "Case File ID",
-            "scope": "#/properties/InspectionReport/properties/case_file_id"
-        },
-        {
-            "type": "Control",
-            "label": "License State File ID",
-            "scope": "#/properties/InspectionReport/properties/license_state"
-        },
-        {
-            "type": "Control",
-            "label": "PDA Submitter Entity",
-            "scope": "#/properties/InspectionReport/properties/pda_submitter_entity"
-        },
-        {
-            "type": "Control",
-            "label": "PDA Submitter Entity",
-            "scope": "#/properties/sgt.integration.propertydata.db.v1.Alley/properties/public"
+            "label": "Property",
+            "scope": "#/properties/InspectionReport/properties/property"
         }
     ]
 }
