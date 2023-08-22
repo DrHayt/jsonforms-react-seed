@@ -4,7 +4,7 @@
         {
             "type": "Control",
             "label": "Property",
-            "scope": "#/properties/InspectionReport/properties/property"
+            "scope": "#/properties/InspectionReport"
         }
     ]
 }
