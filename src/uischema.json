@@ -3,8 +3,18 @@
     "elements": [
         {
             "type": "Control",
-            "label": "Property",
+            "label": "Inspection Report",
             "scope": "#/properties/InspectionReport"
+        },
+        {
+            "type": "Control",
+            "label": "Address",
+            "scope": "#/properties/InspectionReport/properties/property/properties/address"
+        },
+        {
+            "type": "Control",
+            "label": "Property",
+            "scope": "#/properties/InspectionReport/properties/property"
         }
     ]
 }

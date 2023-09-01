@@ -324,13 +324,13 @@
         },
         "sgt.integration.propertydata.v1.Levels": {
             "properties": {
+                "level_number": {
+                    "type": "integer"
+                },
                 "total_area": {
                     "type": "integer"
                 },
                 "finished_living_area": {
-                    "type": "integer"
-                },
-                "level_number": {
                     "type": "integer"
                 },
                 "level_low_ceiling": {
@@ -684,10 +684,49 @@
         },
         "sgt.integration.propertydata.v1.Structures": {
             "properties": {
-                "attachment_type": {
-                    "type": "string"
-                },
                 "structure_type": {
+                    "enum": [
+                        "DWELLING", "WORKSHOP", "BARN", "POLE_BUILDING", "STABLES", "RIDING_ARENA", "POOL_HOUSE", "DETACHED_GARAGE", "OTHER_OUTBUILDING"
+                    ],
+                    "oneOf": [
+                        {
+                            "description": "Dwelling",
+                            "const": "DWELLING"
+                        },
+                        {
+                            "description": "WorkShop",
+                            "const": "WORKSHOP"
+                        },
+                        {
+                            "description": "Barn",
+                            "const": "BARN"
+                        },
+                        {
+                            "description": "Pole Building",
+                            "const": "POLE_BUILDING"
+                        },
+                        {
+                            "description": "Stables",
+                            "const": "STABLES"
+                        },
+                        {
+                            "description": "Riding Arena",
+                            "const": "RIDING_ARENA"
+                        },
+                        {
+                            "description": "Pool House",
+                            "const": "POOL_HOUSE"
+                        },
+                        {
+                            "description": "Detached Garage",
+                            "const": "DETACHED_GARAGE"
+                        },
+                        {
+                            "const": "OTHER_OUTBUILDING"
+                        }
+                    ]
+                },
+                "attachment_type": {
                     "type": "string"
                 },
                 "construction_type": {
