@@ -11,7 +11,12 @@
           ],
           "oneOf": [
             {
-              "type": "string"
+              "title": "None Specified",
+              "const": "UNSPECIFIED"
+            },
+            {
+              "title": "POOPY",
+              "const": "POOPY"
             }
           ],
           "title": "Something Type"
