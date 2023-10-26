@@ -3,8 +3,8 @@
     "elements": [
         {
             "type": "Control",
-            "label": "Inspection Report",
-            "scope": "#/properties/InspectionReport"
+            "label": "ThingsYouAreGettingInto",
+            "scope": "#/properties/ThingsYouAreGettingInto"
         }
     ]
 }

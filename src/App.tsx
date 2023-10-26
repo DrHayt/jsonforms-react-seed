@@ -6,7 +6,7 @@ import Typography from '@mui/material/Typography';
 import logo from './logo.svg';
 import './App.css';
 import schema from './schema.json';
-import uischema from './uischema.json';
+// import uischema from './uischema.json';
 import {materialCells, materialRenderers,} from '@jsonforms/material-renderers';
 import RatingControl from './RatingControl';
 import ratingControlTester from './ratingControlTester';
@@ -84,7 +84,7 @@ const App = () => {
                     <div className={classes.demoform}>
                         <JsonForms
                             schema={schema}
-                            uischema={uischema}
+                            // uischema={uischema}
                             data={data}
                             renderers={renderers}
                             cells={materialCells}
