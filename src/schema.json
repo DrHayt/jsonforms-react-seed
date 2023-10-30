@@ -1,6 +1,6 @@
 {
   "definitions": {
-    "ThingsYouAreGettingInto": {
+    "InspectionData": {
       "properties": {
         "sample_enum_oneof": {
           "enum": [
@@ -23,31 +23,45 @@
               "const": "INDIFFERENT"
             }
           ],
-          "title": "Something Type"
+          "title": "Something Type Single Select"
+        },
+        "description": {
+          "type": "string"
         },
         "sample_enum_multiselect": {
           "type": "array",
           "uniqueItems": true,
           "items": {
             "oneOf": [
-              { "const": "foo", "title": "My Foo" },
-              { "const": "bar", "title": "My Bar" },
-              { "const": "foobar", "title": "My FooBar" }
+              {
+                "title": "Unspecified",
+                "const": "UNSPECIFIED"
+              },
+              {
+                "title": "Good",
+                "const": "GOOD"
+              },
+              {
+                "title": "Bad",
+                "const": "BAD"
+              },
+              {
+                "title": "Indifferent",
+                "const": "INDIFFERENT"
+              }
             ]
-          }
-        },
-        "description": {
-          "type": "string"
+          },
+          "title": "Something Type Multi Select"
         }
       },
       "additionalProperties": true,
       "type": "object",
-      "title": "Things You Are Getting Into"
+      "title": "Inspection Data"
     }
   },
   "properties": {
-    "ThingsYouAreGettingInto": {
-      "$ref": "#/definitions/ThingsYouAreGettingInto"
+    "InspectionData": {
+      "$ref": "#/definitions/InspectionData"
     }
   }
 }
